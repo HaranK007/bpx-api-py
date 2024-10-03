@@ -1,7 +1,7 @@
 import rel
 import websocket
-from bpx.bpx import *
-
+from bpx.bpx import BpxClient
+import json
 
 def on_message(ws, message):
     print('Received message: {}'.format(message))

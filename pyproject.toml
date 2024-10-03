@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "bpx"
+version = "0.1.2"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = { extras = ["socks"], version = "2.31.0" }
+cryptography = "42.0.5"
+pyotp = "2.9.0"
+websocket-client = "1.6.4"
+rel = "0.4.9.6"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.6.8"
+pytest = "^7.0"
+tox = "^4.21.1"
+
+[tool.ruff]
+line-length = 88
+select = ["E", "F", "W"]
+ignore = ["E501"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

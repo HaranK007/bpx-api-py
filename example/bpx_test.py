@@ -1,4 +1,4 @@
-from bpx.bpx import *
+from bpx.bpx import BpxClient
 
 if __name__ == '__main__':
     bpx = BpxClient()
